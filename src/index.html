@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="./css/selector.css">
+	<script src="./js/jquery.min.js"></script>
+	<script src="./js/jquery.rotate.js"></script>
+	<script src="./js/jquery.selectGroup.js"></script>
+	<script>
+$(function(){
+	$("#category").selectGroup();
+});
+	</script>
+</head>
+<body>
+	<select name="category" id="category">
+		<optgroup label="选择">
+				<option value="-1">选择</option>
+		</optgroup>
+		<optgroup label="新类型">
+				<option value="1">新建模板</option>
+		</optgroup>
+		<optgroup label="专题">
+				<option value="2">其他专题</option>
+				<option value="23">抽奖专题</option>
+				<option value="24">推广、礼包专题</option>
+				<option value="25">名人堂专题</option>
+				<option value="26">静态专题</option>
+				<option value="27">媒体专题</option>
+				<option value="28">签到专题</option>
+				<option value="29">预约专题</option>
+				<option value="30">用户调查专题</option>
+		</optgroup>
+		<optgroup label="测试">
+				<option value="3">BUG</option>
+				<option value="20">功能测试需求</option>
+				<option value="61">新项目性能测试需求</option>
+				<option value="64">http接口性能测试需求</option>
+		</optgroup>
+		<optgroup label="海外">
+				<option value="4">串接</option>
+				<option value="5">金流</option>
+				<option value="8">FB APP及其他</option>
+				<option value="9">BOSS后台</option>
+				<option value="32">海外第三方串接模版</option>
+				<option value="19">海外网页</option>
+				<option value="58">FB活动策划需求</option>
+				<option value="62">文案需求</option>
+		</optgroup>
+		<optgroup label="其他">
+				<option value="6">活动</option>
+				<option value="7">其他</option>
+				<option value="31">新闻页充值领卡</option>
+				<option value="49">聊天监控系统对接需求模板</option>
+				<option value="54">平台运维监控系统模版</option>
+				<option value="59">游戏盒子</option>
+		</optgroup>
+		<optgroup label="广告">
+				<option value="10">广告新建渠道</option>
+				<option value="33">渠道金额分摊调整</option>
+				<option value="34">广告模板</option>
+				<option value="35">渠道API接口对接升级</option>
+		</optgroup>
+		<optgroup label="官网">
+				<option value="13">官网制作和游戏对接模板(官网制作+聊天监控)</option>
+				<option value="65">官网制作模版(改版)</option>
+				<option value="66">官网印象站制作模版</option>
+		</optgroup>
+		<optgroup label="登录器">
+				<option value="14">登录器开发</option>
+				<option value="18">渠道发布</option>
+				<option value="60">37游戏盒子</option>
+		</optgroup>
+		<optgroup label="合服">
+				<option value="15">合服</option>
+				<option value="55">平台合服模版</option>
+		</optgroup>
+		<optgroup label="统计">
+				<option value="16">统计后台渠道</option>
+				<option value="17">统计报表</option>
+				<option value="36">数据查询与导出</option>
+				<option value="37">报表优化</option>
+				<option value="38">短信发送与邮件推广</option>
+				<option value="39">对外开放数据需求（对外联盟、公会等）</option>
+				<option value="40">数据疑问</option>
+		</optgroup>
+		<optgroup label="运维">
+				<option value="21">服务器申请安装环境</option>
+				<option value="22">服务器配置变更</option>
+				<option value="50">DB程序权限申请</option>
+				<option value="53">DB实名查询权限申请</option>
+				<option value="56">DB库表创建变更及sql评估申请</option>
+				<option value="57">漏洞处理需求</option>
+				<option value="63">安全扫描</option>
+		</optgroup>
+		<optgroup label="OA">
+				<option value="41">OA新流程</option>
+				<option value="42">流程表单和流程修改</option>
+				<option value="43">OA改单</option>
+				<option value="44">OA报表要求</option>
+				<option value="45">OA模块需求</option>
+				<option value="46">定时提醒需求</option>
+		</optgroup>
+		<optgroup label="设计分类">
+				<option value="47">小图制作申请</option>
+		</optgroup>
+		<optgroup label="项目">
+				<option value="48">新项目需求模板</option>
+		</optgroup>
+		<optgroup label="todo需求">
+				<option value="51">todo新功能需求模板</option>
+				<option value="52">bug修复需求模板</option>
+		</optgroup>
+</select>
+</body>
+</html>

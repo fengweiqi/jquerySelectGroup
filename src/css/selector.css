@@ -1,0 +1,127 @@
+.selectWrap{
+	position: relative;
+	font-family: 微软雅黑, Verdana, sans-serif, 宋体;
+	font-size: 14px;
+	width:200px;
+  z-index: 1000;
+}
+.selectWrap .choose{
+	  display: block;
+  position: relative;
+  z-index: 2;
+  padding: 0 0 0 8px;
+  height: 25px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  background-color: #fff;
+  background: -webkit-gradient(linear,50% 0,50% 100%,color-stop(20%,#fff),color-stop(50%,#f6f6f6),color-stop(52%,#eee),color-stop(100%,#f4f4f4));
+  background: -webkit-linear-gradient(top,#fff 20%,#f6f6f6 50%,#eee 52%,#f4f4f4 100%);
+  background: -moz-linear-gradient(top,#fff 20%,#f6f6f6 50%,#eee 52%,#f4f4f4 100%);
+  background: -o-linear-gradient(top,#fff 20%,#f6f6f6 50%,#eee 52%,#f4f4f4 100%);
+  background: linear-gradient(top,#fff 20%,#f6f6f6 50%,#eee 52%,#f4f4f4 100%);
+  background-clip: padding-box;
+  box-shadow: 0 0 3px #fff inset,0 1px 1px rgba(0,0,0,.1);
+  color: #444;
+  text-decoration: none;
+  white-space: nowrap;
+  line-height: 24px;
+  cursor: pointer;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.selectWrap .choose.active{
+	border: 1px solid #aaa;
+  border-bottom: 0;
+  -moz-border-radius-bottomright: 0;
+  border-bottom-right-radius: 0;
+  -moz-border-radius-bottomleft: 0;
+  border-bottom-left-radius: 0;
+  background-image: -webkit-gradient(linear,50% 0,50% 100%,color-stop(20%,#eee),color-stop(80%,#fff));
+  background-image: -webkit-linear-gradient(#eee 20%,#fff 80%);
+  background-image: -moz-linear-gradient(#eee 20%,#fff 80%);
+  background-image: -o-linear-gradient(#eee 20%,#fff 80%);
+  background-image: linear-gradient(#eee 20%,#fff 80%);
+  box-shadow: 0 1px 0 #fff inset;
+  border-bottom: 0;
+}
+
+.selectWrap .triangle{
+	  display: inline-block;
+	  width: 0;
+    height: 0;
+    border-left:3px solid transparent;
+    border-right:3px solid transparent;
+    border-top:5px solid #A69B9B;
+    position: absolute;
+    right:10px;
+    top:11px;
+      z-index: 3;
+}
+.selectWrap dl{
+ 
+	margin:0;
+	position: absolute;
+	top:25px;
+	left:0;
+	z-index: 1;
+	width:300px;
+	display: none;
+	border: 1px solid #aaa;
+  border-radius: 0 5px 5px 5px;
+   overflow-x: hidden;
+  overflow-y: auto;
+  
+   max-height: 240px;
+  	background: #fff;
+  	box-shadow: 0 4px 5px rgba(0,0,0,.15);
+}
+.selectWrap dl dt{
+	line-height: 30px;
+	padding-left:10px;
+	cursor: pointer;
+	font-weight: bold;
+}
+.selectWrap dl dt .triangle{
+    position: relative;
+    margin-right: 5px;
+    top:-1px;
+    left:-2px;
+}
+.selectWrap dl dd{
+	margin-left:0;
+	display: none;
+}
+.selectWrap dl dd.first{
+  display: block;
+    padding: 10px;
+  padding-bottom: 1px;
+}
+
+.selectWrap dl dd.first input{
+  margin: 1px 0;
+  padding: 4px 20px 4px 5px;
+  width:91%;
+  height: auto;
+  outline: 0;
+  border: 1px solid #aaa;
+
+  background: url(../images/search.png) no-repeat 97%;
+  font-size: 1em;
+  font-family: sans-serif;
+  line-height: normal;
+  border-radius: 0;
+}
+  
+.selectWrap dl dd ul{
+	list-style: none;
+	padding-left:0;
+	margin:0;
+}
+.selectWrap dl dd ul li{
+	line-height: 25px;
+	cursor: pointer;
+	padding-left:40px;
+}
+.selectWrap dl dd ul li:hover{
+	background: #ccc;
+}
